@@ -16,7 +16,7 @@ interface TokenResponse {
  *   the manual paste fallback.
  */
 export const REDIRECT = {
-  web: () => `${window.location.origin}/auth/callback`,
+  web: () => `${window.location.origin}${import.meta.env.BASE_URL}auth/callback`,
   app: AUTH.redirectUri,
 }
 
