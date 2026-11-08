@@ -1,0 +1,47 @@
+.root {
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.error .title {
+  color: var(--color-danger);
+}
+
+.description {
+  margin: 6px auto 0;
+  max-width: 420px;
+}
+
+.action {
+  margin-top: 16px;
+}
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  margin: 48px auto;
+  border: 3px solid var(--color-accent-soft);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation-duration: 2.4s;
+  }
+}

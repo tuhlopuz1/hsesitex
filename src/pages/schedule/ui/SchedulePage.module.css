@@ -1,0 +1,22 @@
+.days {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.day {
+  scroll-margin-top: 24px;
+}
+
+.dayTitle {
+  margin: 0 0 10px;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.lessons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

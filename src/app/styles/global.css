@@ -1,0 +1,102 @@
+:root {
+  --color-bg: #f4f6fa;
+  --color-surface: #ffffff;
+  --color-surface-muted: #eef1f6;
+  --color-surface-hover: #f2f4f8;
+  --color-border: #e3e7ee;
+
+  --color-text: #141a26;
+  --color-text-secondary: #5b6474;
+  --color-text-tertiary: #8a93a3;
+
+  --color-accent: #0050cf;
+  --color-accent-hover: #0044b0;
+  --color-accent-soft: #e8f0ff;
+  --color-accent-soft-hover: #d9e6ff;
+  --color-accent-border: #a9c4f5;
+
+  --color-success: #1a7f45;
+  --color-success-soft: #e3f5ea;
+  --color-warning: #a35d00;
+  --color-warning-soft: #fdf1df;
+  --color-danger: #c62828;
+  --color-danger-soft: #fdecec;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  --shadow-sm: 0 1px 3px rgb(20 26 38 / 0.08);
+  --shadow-lg: 0 10px 40px rgb(20 26 38 / 0.18);
+
+  color-scheme: light;
+  font-family: Inter, -apple-system, 'Segoe UI', Roboto, system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0f131a;
+    --color-surface: #171c25;
+    --color-surface-muted: #222936;
+    --color-surface-hover: #1e2430;
+    --color-border: #2a3140;
+
+    --color-text: #e8ecf3;
+    --color-text-secondary: #a3acbb;
+    --color-text-tertiary: #727c8d;
+
+    --color-accent: #4d8dff;
+    --color-accent-hover: #6a9fff;
+    --color-accent-soft: #1a2a48;
+    --color-accent-soft-hover: #213458;
+    --color-accent-border: #2f4f8a;
+
+    --color-success: #4cc27f;
+    --color-success-soft: #173326;
+    --color-warning: #f0a740;
+    --color-warning-soft: #3a2b14;
+    --color-danger: #ff6b6b;
+    --color-danger-soft: #3a1c1f;
+
+    --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 10px 40px rgb(0 0 0 / 0.5);
+
+    color-scheme: dark;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

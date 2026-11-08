@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card[data-done] .description {
+  color: var(--color-text-tertiary);
+  text-decoration: line-through;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.head:empty {
+  display: none;
+}
+
+.description {
+  margin: 0;
+  font-size: 15px;
+  white-space: pre-line;
+}
+
+.meta {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}

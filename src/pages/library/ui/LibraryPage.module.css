@@ -1,0 +1,33 @@
+.cardInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+
+.cardInfo > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.label {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.value {
+  font-weight: 600;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsText {
+  margin: 4px 0 8px;
+  white-space: pre-line;
+}
