@@ -30,7 +30,10 @@ jobs:
       - name: Build site
         run: npm run build
       - name: Add SPA fallback
-        run: cp dist/index.html dist/404.html
+        run: |
+          cp dist/index.html dist/404.html
+          mkdir -p dist/auth/callback
+          cp dist/index.html dist/auth/callback/index.html
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
